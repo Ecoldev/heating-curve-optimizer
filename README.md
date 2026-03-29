@@ -1,22 +1,48 @@
 # Heating Curve Optimizer
 
-Tool for analyzing and optimizing underfloor heating curve based on weather data.
+Tool for optimizing underfloor heating settings based on real weather data.
 
-## Modes
+## Problem
+
+Manual adjustment of heating curves is inefficient and often based on guesswork.
+This tool uses weather data (historical + forecast) to recommend optimal settings.
+
+## Features
+
+* Open-Meteo integration
+* IMGW integration (Poland)
+* Heating curve recommendation engine
+* Two modes:
+
+  * simple (trend-based)
+  * advanced (weather factors + charts)
+
+## Usage
 
 ### Simple mode
-Basic temperature trend analysis.
 
 python main.py
 
 ### Advanced mode
-Includes weather factors (wind, cloud, apparent temperature) + charts.
 
 python main.py advanced
 
-## Data sources
-- Open-Meteo API
-- IMGW API
-
 ## Requirements
+
 pip install -r requirements.txt
+
+## Data sources
+
+* Open-Meteo API
+* IMGW API
+
+## Roadmap
+
+* [ ] CLI arguments (lat/lon)
+* [ ] config file
+* [ ] JSON output (history)
+* [ ] Home Assistant integration
+
+## Author
+
+DevOps / automation project
